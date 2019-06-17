@@ -1,18 +1,18 @@
 # SKCC_DataEng_Final
 
-1. swappiness
- sudo sysctl vm.swappiness=1
+# System Configuration Checks
+
+### 1. swappiness
+<pre>
+sudo sysctl vm.swappiness=1
+</pre>
+<pre>
+sudo vi /etc/sysctl.conf
 vm.swappiness = 1
+</pre>
 
-[ config  변경]
-
-[centos@ip-172-31-3-92 /]$ sudo vi /etc/sysctl.conf
-vm.swappiness = 1
-
-![ex_screenshot](./캡처_swapness.png)
-
-2. attributes mount
-
+### 2. attributes mount
+<pre>
 df -h
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/nvme0n1p1  100G  899M  100G   1% /
@@ -22,39 +22,51 @@ tmpfs           7.6G   17M  7.6G   1% /run
 tmpfs           7.6G     0  7.6G   0% /sys/fs/cgroup
 tmpfs           1.6G     0  1.6G   0% /run/user/0
 tmpfs           1.6G     0  1.6G   0% /run/user/1000
+</pre>
 
-
-![ex_screenshot](./attributes_mount.png)
-
-3. 
+### 3. ext-based check
+<pre>
 fsck -a /dev/nvme0n1p1
 fsck from util-linux 2.23.2
 /sbin/fsck.xfs: XFS file system.
+</pre>
 
-
-4. [Disable transparent hugepage support]
-
+### 4. Disable transparent hugepage support
+<pre>
 $ cat /sys/kernel/mm/transparent_hugepage/enabled
 [always] madvise never ([always] 에 대괄호가 있으면 실행 중)
 
 $ sudo tuned-adm profile network-latency
 $ cat /sys/kernel/mm/transparent_hugepage/enabled
 always madvise [never]
+</pre>
 
-
-5.list your network
+### 5. list your network
+<pre>
  ifconfig -a 
+</pre>
 
 ![ex_screenshot](./config_5.png)
 
-6. show that ...
- getent hosts
+### 6. list your network
+<pre>
+getent hosts
+</pre>
+<pre>
+ sudo yum install bind-utils net-tools -y
+ nslookup 15.164.82.192
+</pre>
 
- 7. show the nscd service
- [centos@ip-172-31-3-92 home]$ ps -ef | grep nscd
+### 7. show the nscd service
+<pre>
+[centos@ip-172-31-3-92 home]$ ps -ef | grep nscd
 centos   20162 12193  0 05:01 pts/0    00:00:00 grep --color=auto nscd
+</pre>
 
-8. show the ntpd serivce
+### 7. show the ntpd serivce
+<pre>
 [centos@ip-172-31-3-92 home]$ ps -ef | grep nptd
 centos   20164 12193  0 05:01 pts/0    00:00:00 grep --color=auto nptd
+</pre>
+
 
