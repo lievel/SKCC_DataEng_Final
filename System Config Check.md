@@ -45,7 +45,7 @@ always madvise [never]
  ifconfig -a 
 </pre>
 
-![ex_screenshot](./config_5.png)
+![ex_screenshot](./config_5.PNG)
 
 ### 6. list your network
 <pre>
