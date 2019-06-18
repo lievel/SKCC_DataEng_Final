@@ -78,9 +78,9 @@ SHOW GRANTS FOR 'amon'@'%';
 </pre>
 
 ### 4. Preparing the Cloudera Manager Server Database
-<pre>
 sudo /usr/share/cmf/schema/scm_prepare_database.sh <databaseType> <databaseName> <databaseUser>
 
+<pre>
 sudo /usr/share/cmf/schema/scm_prepare_database.sh mysql scm scm training
 sudo /usr/share/cmf/schema/scm_prepare_database.sh mysql amon amon training
 sudo /usr/share/cmf/schema/scm_prepare_database.sh mysql rman rman training
