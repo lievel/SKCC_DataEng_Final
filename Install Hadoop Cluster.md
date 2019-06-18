@@ -15,4 +15,4 @@ http://<server_host>:7180
 
 ### 3. 서비스 구성
 
-![ex_screenshot](./캡처_cluster구성.png)
+![ex_screenshot](./캡처_cluster구성.PNG)
