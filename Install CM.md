@@ -14,7 +14,8 @@ sudo rpm --import https://archive.cloudera.com/cm5/redhat/7/x86_64/cm/RPM-GPG-KE
 sudo yum install oracle-j2sdk1.7
 
 export JAVA_HOME=/usr/java/jdk1.7.0_67-cloudera
-export PATH=PATH:$JAVA_HOME/bin
+export PATH=$PATH:$JAVA_HOME/bin
+
 </pre>
 
 ### 3. CM server install
