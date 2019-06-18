@@ -1,6 +1,15 @@
 
 # System Configuration Checks
 
+### 0. root 계정 변환
+<pre>
+sudo -i
+passwd
+
+password 수정
+</pre>
+
+
 ### 1. swappiness
 <pre>
 sudo sysctl vm.swappiness=1
