@@ -26,4 +26,8 @@ Install Parcels
 Inspect hosts for correctness
 </pre>
 
+![ex_screenshot](./111.PNG)
+
 ![ex_screenshot](./캡처_cluster구성.PNG)
+
+![ex_screenshot](./main.PNG)
