@@ -31,6 +31,7 @@ All done!
 
 ### 2. JDBC Driver install
 <pre>
+sudo  wget https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.47.tar.gz
 
 tar zxvf mysql-connector-java-5.1.47.tar.gz
 
