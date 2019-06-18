@@ -9,7 +9,7 @@ sudo tail -f /var/log/cloudera-scm-server/cloudera-scm-server.log
 
 ### 2. Server 접속
 <pre>
-http://"server_host">:7180
+http://"server_host":7180
 </pre>
 
 
