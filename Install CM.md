@@ -9,7 +9,7 @@ sudo wget https://archive.cloudera.com/cm5/redhat/7/x86_64/cm/cloudera-manager.r
 sudo rpm --import https://archive.cloudera.com/cm5/redhat/7/x86_64/cm/RPM-GPG-KEY-cloudera
 </pre>
 
-### 2. jdk 설치
+### 2. jdk 설치 - 모든 host
 <pre>
 sudo yum install oracle-j2sdk1.7
 
