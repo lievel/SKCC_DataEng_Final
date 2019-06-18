@@ -16,12 +16,12 @@ export PATH=PATH:$JAVA_HOME/bin
 </pre>
 
 ### 3. CM server install
-[server]
+CM Server 설치
 <pre>
 sudo yum install cloudera-manager-daemons cloudera-manager-server
 </pre>
 
-[agent]
+agent 설치 및 실행 - 모든 host
 <pre>
 sudo yum install cloudera-manager-daemons cloudera-manager-agent
 
