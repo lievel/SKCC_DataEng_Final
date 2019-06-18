@@ -2,8 +2,10 @@
 
 ### 1. Start Cloudera Manager Server
 <pre>
-chmod -R 777 /var/lib
+chmod -R 777 /var/lib - 모든 호스트에서 수행
+</pre>
 
+<pre>
 sudo systemctl start cloudera-scm-server
 
 sudo tail -f /var/log/cloudera-scm-server/cloudera-scm-server.log
