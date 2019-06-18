@@ -7,6 +7,7 @@ sudo wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
 sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm
 sudo yum update
 sudo yum install mysql-server
+sudo systemctl enable mysqld
 sudo systemctl start mysqld
 
 sudo /usr/bin/mysql_secure_installation
