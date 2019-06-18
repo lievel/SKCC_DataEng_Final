@@ -28,6 +28,8 @@ Inspect hosts for correctness
 
 ![ex_screenshot](./111.PNG)
 
-![ex_screenshot](./캡처_cluster구성.PNG)
+![ex_screenshot](./캡처_구성_new2.PNG)
 
-![ex_screenshot](./main.PNG)
+![ex_screenshot](./클러스터구성.PNG)
+
+![ex_screenshot](./success.PNG)
