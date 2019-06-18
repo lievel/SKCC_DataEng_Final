@@ -29,6 +29,9 @@ sudo yum install cloudera-manager-daemons cloudera-manager-agent
 
 sudo vi /etc/cloudera-scm-agent/config.ini
 
+# Hostname of the CM server의 host 명으로 수정
+server_host=host1
+
 sudo systemctl start cloudera-scm-agent
 
 sudo service cloudera-scm-agent restart //start 되었는지 확인
