@@ -2,6 +2,8 @@
 
 ### 1. Start Cloudera Manager Server
 <pre>
+chmod -R 777 /var/lib
+
 sudo systemctl start cloudera-scm-server
 
 sudo tail -f /var/log/cloudera-scm-server/cloudera-scm-server.log
