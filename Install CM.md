@@ -1,6 +1,6 @@
 # Install CM
 
-### 1. repo file download
+### 1. repo file download - 모든 host
 <pre>
 sudo yum install wget
 
