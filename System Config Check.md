@@ -39,6 +39,16 @@ $ sudo tuned-adm profile network-latency
 $ cat /sys/kernel/mm/transparent_hugepage/enabled
 always madvise [never]
 </pre>
+또는 아래 명령 수행
+<pre>
+sudo vi /etc/rc.local
+
+아래 내용 기입 후
+echo never > /sys/kernel/mm/transparent_hugepage/defrag
+
+아래 내용 수행
+sudo sh -c "echo 'never' > /sys/kernel/mm/transparent_hugepage/defrag" 
+</pre>
 
 ### 5. list your network
 <pre>
